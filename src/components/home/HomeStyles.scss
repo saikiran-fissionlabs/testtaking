@@ -1,0 +1,37 @@
+.container {
+}
+.username {
+  color: #162E64;
+  padding-top: 40px;
+  padding-left: 41px;
+  padding-bottom: 84px;
+  background: #FBEDED;
+}
+.tabs {
+  margin-top: -60px;
+  padding-left: 41px;
+}
+.tab {
+  height: 0px;
+  margin-top: 12px !important;
+  width: 10%;
+  color: #fff !important;
+  font-size: 18px;
+  text-transform: capitalize !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  background: #7B87A3 !important;
+}
+.activeTab {
+  height: 60px;
+  width: 10%;
+  color: #fff !important;
+  text-transform: capitalize !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  background: #162E64 !important;
+}
+.tabPanel {
+  color: #fff;
+  background: #162E64;
+}

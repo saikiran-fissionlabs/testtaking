@@ -1,0 +1,83 @@
+.container {
+  height: auto;
+}
+.main {
+  margin: 50px;
+}
+h1 {
+  // position: absolute;
+  width: 275px;
+  height: 51px;
+  left: 56px;
+  top: 75px;
+
+  // font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+
+  background: linear-gradient(90deg, rgba(1, 7, 165, 0.5) 0%, rgba(111, 6, 6, 0.5) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // text-fill-color: transparent;
+}
+.txtHeading1 {
+  margin-left: 10px !important;
+  margin-bottom: 50px !important; 
+  // margin-top: 75px !important; 
+  background: linear-gradient(90deg, rgba(1, 7, 165, 0.5) 0%, rgba(111, 6, 6, 0.5) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // text-fill-color: transparent;
+}
+.txtBox {
+  background: #FBEDED !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btnLogin {
+  margin-top: 43px !important;
+  margin-left: 72px !important;
+  margin-bottom: 33px !important;
+  background: rgba(18, 147, 47, 0.62) !important;
+  border-radius: 8px;
+}
+
+.txtLink {
+  margin-left: 10px !important;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #162E64 !important;
+}
+.leftSide{
+  // position: relative;
+  height: 745px;
+  border: 1px solid #162E64;
+  padding: 40px;
+  text-align: center;
+  background-color: #162e64;
+}
+.txtHeading{
+  margin-bottom: 30px !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  line-height: 39px !important;
+  color: #fff !important;
+}
+.txtHeading2{
+  margin-bottom: 60px !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  line-height: 39px !important;
+  color: #fff;
+}
+.App-logo {
+  // width: 360px;
+  // height: 277px;
+}
