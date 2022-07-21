@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+
 // import { styled } from '@mui/material/styles';
 // import Paper from '@mui/material/Paper';
 
@@ -82,7 +83,7 @@ class RegisterComponent extends React.PureComponent {
             <DropdownList label='class' value={this.state.classType} itemsList={this.state.itemsList} handleChange={this.handleChange} />
           </Grid>
           <Grid Item xs={9} className='btnGrid'>
-            <Button className='btnSignUp' variant="contained">REGISTER</Button>
+            <Button className='btnSignUp' onClick={() => {this.props.navigate('/home')}} variant="contained">REGISTER</Button>
           </Grid>
         </Grid>
       </div>

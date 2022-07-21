@@ -41,7 +41,18 @@
 }
 .card {
   display: inline-flex;
+  height: 200px;
+  width: 400px;
+  border-radius: 20px !important;
 }
 .cardContent {
   // display: inline-flex;
+}
+.grids {
+  margin-right: 150px;
+  margin-top: 35px;
+}
+.grid {
+  margin-top: 30px;
+  // padding: 6px;
 }

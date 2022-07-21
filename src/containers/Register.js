@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import RegisterComponent from '../components/register/RegisterComponent';
+import { useNavigate } from 'react-router-dom';
 
-export class Register extends Component {
-  render() {
+// export class Register extends Component {
+  function Register(props) {
+  // render() {
+    let navigate = useNavigate();
    return (
-    <RegisterComponent />
+    <RegisterComponent {...props} navigate={navigate} />
    )
-  }
+  // }
 }
 
 export const mapStateToProps = store => {

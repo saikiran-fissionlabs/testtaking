@@ -7,6 +7,97 @@ import Box from '@mui/material/Box';
 
 import './HomeStyles.scss';
 import Carousel from './Carousel';
+import testNow from '../../assets/images/testNow.png';
+import time from '../../assets/images/time.png';
+import marks from '../../assets/images/marks.png';
+import qus from '../../assets/images/qus.png';
+
+const cards = [
+  {
+    label: 'Test -1',
+    time: '30 min',
+    marks: '150 M',
+    qus: '30 Q',
+    imgPath: testNow,
+    iconTime: time,
+    iconMarks: marks,
+    iconQus: qus
+  },
+  {
+    label: 'Test -2',
+    time: '1:20 hr',
+    marks: '160 M',
+    qus: '40 Q',
+    imgPath: testNow,
+    iconTime: time,
+    iconMarks: marks,
+    iconQus: qus
+  },
+  {
+    label: 'Test -3',
+    time: '30 min',
+    marks: '150 M',
+    qus: '30 Q',
+    imgPath: testNow,
+    iconTime: time,
+    iconMarks: marks,
+    iconQus: qus
+  }
+];
+const cardOne = [
+  {
+    label: 'EAM -1',
+    time: '15 min',
+    marks: '30 M',
+    qus: '10 Q',
+    imgPath: testNow,
+    iconTime: time,
+    iconMarks: marks,
+    iconQus: qus
+  }
+];
+const jeeMains = [
+  {
+    label: 'Test -1',
+    time: '30 min',
+    marks: '150 M',
+    qus: '30 Q',
+    imgPath: testNow,
+    iconTime: time,
+    iconMarks: marks,
+    iconQus: qus
+  },
+  {
+    label: 'Test -2',
+    time: '1:20 hr',
+    marks: '160 M',
+    qus: '40 Q',
+    imgPath: testNow,
+    iconTime: time,
+    iconMarks: marks,
+    iconQus: qus
+  },
+  {
+    label: 'Test -3',
+    time: '30 min',
+    marks: '150 M',
+    qus: '30 Q',
+    imgPath: testNow,
+    iconTime: time,
+    iconMarks: marks,
+    iconQus: qus
+  },
+  {
+    label: 'Test -4',
+    time: '30 min',
+    marks: '150 M',
+    qus: '30 Q',
+    imgPath: testNow,
+    iconTime: time,
+    iconMarks: marks,
+    iconQus: qus
+  }
+];
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,11 +150,13 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0} className='tabPanel'>
         <strong>JEE Mains</strong><br/>
-        <Carousel />
+        <Carousel cards={cards} />
         <strong>EAMCET</strong>
+        <Carousel cards={cardOne} />
       </TabPanel>
       <TabPanel value={value} index={1} className='tabPanel'>
         <strong>JEE Mains</strong>
+        <Carousel cards={jeeMains} />
       </TabPanel>
       <TabPanel value={value} index={2} className='tabPanel'>
         <strong>EAMCET</strong>
