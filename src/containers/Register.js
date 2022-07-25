@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import RegisterComponent from '../components/register/RegisterComponent';
 import { useNavigate } from 'react-router-dom';

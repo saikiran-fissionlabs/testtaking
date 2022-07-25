@@ -6,6 +6,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Login from './containers/Login';
 import Register from './containers/Register';
 import Home from './containers/Home';
+import Instrucations from './containers/Instrucations';
+import TestTake from './containers/TestTake';
 
 function App() {
   return (
@@ -16,10 +18,11 @@ function App() {
     // </div>
     <Router>
       <Routes>
-        {/* <Route path='/' component={Login} /> */}
         <Route path='/' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/home' element={<Home/>} />
+        <Route path='/instrucations' element={<Instrucations/>} />
+        <Route path='/test' element={<TestTake/>} />
       </Routes>
     </Router>
   );

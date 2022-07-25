@@ -1,13 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
+import { useNavigate } from 'react-router-dom';
+
 import HomeComponent from '../components/home/HomeComponent';
 
-export class Home extends Component {
-  render() {
-   return (
-    <HomeComponent />
+function Home (props) {
+  // render() {
+    let navigate = useNavigate();
+    return (
+    <HomeComponent {...props} navigate={navigate} />
    )
-  }
+  // }
 }
 
 export const mapStateToProps = store => {

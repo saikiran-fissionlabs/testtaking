@@ -40,9 +40,9 @@ function SwipeableTextMobileStepper(props) {
                 </Grid>
                 <Grid Item xs={3} className='grid'>
                   <img src={step.iconMarks} className="App-logo" alt='logo' />
-                <Typography sx={{ fontSize: 16, fontWeight: 700 }} color='#16642C'>
-                  {step.marks}
-                </Typography>
+                  <Typography sx={{ fontSize: 16, fontWeight: 700 }} color='#16642C'>
+                    {step.marks}
+                  </Typography>
                 </Grid>
                 <Grid Item xs={3} className='grid'>
                   <img src={step.iconQus} className="App-logo" alt='logo' />
@@ -51,7 +51,7 @@ function SwipeableTextMobileStepper(props) {
                   </Typography>
                 </Grid>
                 <Grid Item xs={3}>
-                  <img src={step.imgPath} className="App-logo" alt='logo' />
+                  <img onClick={() => {this.props.navigate('/instrucations')}} src={step.imgPath} className="App-logo" alt='logo' />
                 </Grid>
               </Grid>
             </CardContent>
@@ -61,8 +61,8 @@ function SwipeableTextMobileStepper(props) {
               </Box>
             </CardActions> */}
           </Card>
-        )}
-        </div>
+        )}  
+      </div>
     </Box>
   );
 }

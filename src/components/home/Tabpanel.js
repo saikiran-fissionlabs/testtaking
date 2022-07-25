@@ -156,7 +156,7 @@ export default function BasicTabs() {
       </TabPanel>
       <TabPanel value={value} index={1} className='tabPanel'>
         <strong>JEE Mains</strong>
-        <Carousel cards={jeeMains} />
+        <Carousel cards={jeeMains} className='tabCarousel' />
       </TabPanel>
       <TabPanel value={value} index={2} className='tabPanel'>
         <strong>EAMCET</strong>
