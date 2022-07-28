@@ -21,12 +21,8 @@ function SwipeableTextMobileStepper(props) {
     props.navigate('/instrucations');
   }
   const handleClickLeft = () => {
-    console.log('----');
-    // props.navigate('/instrucations');
   }
   const handleClickRight = () => {
-    console.log('----');
-    // props.navigate('/instrucations');
   }
 
   return (
@@ -78,7 +74,7 @@ function SwipeableTextMobileStepper(props) {
             </CardActions> */}
           </Card>
         )}
-        <div className='rightArrow' onClick={handleClickLeft}>
+        <div className='rightArrow' onClick={handleClickRight}>
           <img src={RightArrow} className="middle" alt='left-arrow' />
         </div>
       </div>

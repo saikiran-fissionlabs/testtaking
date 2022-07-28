@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import './styles.scss';
 import '../../styles/CommonStyles.scss';
 import marksImage from '../../assets/images/bigMarks.png';
-import backArrowImage from '../../assets/images/Arrow.png';
 
 class ResultsComponent extends React.PureComponent {
   constructor(props) {
@@ -66,7 +65,7 @@ class ResultsComponent extends React.PureComponent {
                     <Grid xs={3} xl={3} lg={3}>
                       <Grid container direction='column' alignItems='flex-end' justifyContent='flex-end' style={{ paddingRight: 40 }}>
                         <Grid item>
-                          <img src={marksImage} className='marksImage' />
+                          <img src={marksImage} className='marksImage' alt='marks' />
                         </Grid>
                       </Grid>
                     </Grid>

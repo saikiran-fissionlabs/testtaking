@@ -65,7 +65,7 @@ class TestTakeComponent extends React.PureComponent {
               <Typography className='txtQus' component="div" gutterBottom>{Questions.qus[qusIndex].question}</Typography>
               <ol className='olOpts'>
                 {Questions.qus[qusIndex].options.map((post, i) =>
-                  <div className={isActive == i ? 'divOpts gradient-Active' : 'divOpts gradient'} key={i} onClick={() => this.handleSelect(i)}>
+                  <div className={isActive === i ? 'divOpts gradient-Active' : 'divOpts gradient'} key={i} onClick={() => this.handleSelect(i)}>
                     <li className='liOptions'>{post}</li>
                   </div>
                 )}

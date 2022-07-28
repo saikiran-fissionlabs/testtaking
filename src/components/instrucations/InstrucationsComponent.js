@@ -26,7 +26,7 @@ class InstrucationsComponent extends React.PureComponent {
       <Grid className='main'>
         <Grid container className=''>
           <Grid Item xs={1}>
-            <a href=''><img src={Arrow} onClick={() => { this.props.navigate('/home') }} className="backArrow" alt='logo' /></a>
+            <img src={Arrow} onClick={() => { this.props.navigate('/home') }} className="backArrow" alt='logo' />
           </Grid>
           <Grid Item xs={3} className=''>
             <Typography variant="h3" className='' component="div" gutterBottom>Test -1</Typography>
