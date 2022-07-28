@@ -7,6 +7,7 @@ import Checkbox from '@mui/material/Checkbox';
 import './styles.scss';
 import Questions from '../../assets/questions.json';
 import time from '../../assets/images/time.png';
+import CountDown from '../../common/CountDown';
 
 class TestTakeComponent extends React.PureComponent {
   constructor(props) {
@@ -82,9 +83,9 @@ class TestTakeComponent extends React.PureComponent {
           </div>
         </Grid>
         <Grid xs={4} className='testRight'>
-          <Grid xs={12} className='leftHead'>
+          <Grid xs={12} className='timer'>
             <img src={time} alt='imgTime' />
-            <span className='timmer'>15:30 m</span>
+            <CountDown />
           </Grid>
           <Grid container className='leftHead'>
             <Grid xs={4} className=''>
