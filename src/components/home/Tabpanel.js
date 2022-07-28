@@ -150,7 +150,7 @@ export default function BasicTabs(props) {
       </Box>
       <TabPanel value={value} index={0} className='tabPanel'>
         <strong className='tabSubTitle'>JEE Mains</strong>
-        <Carousel cards={cards} {...props}/>
+        <Carousel cards={cards} {...props} tab='main'/>
         <strong className='tabSubTitle'>EAMCET</strong>
         <Carousel cards={cardOne} />
       </TabPanel>

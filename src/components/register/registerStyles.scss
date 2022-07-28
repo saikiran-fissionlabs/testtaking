@@ -12,13 +12,14 @@
   padding-left: 250px;
 }
 .btnGrid {
-  text-align: center;
+  // text-align: center;
 }
 .btnSignUp {
   width: 211px;
   height: 54px;
   background: #162E64 !important;
   border-radius: 8px !important;
+  margin-left: 230px !important;
 }
 .txtHeading{
   margin-bottom: 30px !important;
@@ -37,4 +38,13 @@
 }
 .mb-40 {
  margin-bottom: 40px;
+}
+.MuiOutlinedInput-root.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  margin-bottom: 0px;
+}
+label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  background: #FFF;
+}
+div#demo-simple-select {
+  background: #fff;
 }

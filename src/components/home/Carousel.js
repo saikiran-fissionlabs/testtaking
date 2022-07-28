@@ -34,9 +34,10 @@ function SwipeableTextMobileStepper(props) {
         enableMouseEvents
         className='cards'
       >
+        {props.tab === 'main' &&
         <div className='leftArrow' onClick={handleClickLeft}>
           <img src={LeftArrow} className="middle" alt='left-arrow' />
-        </div>
+        </div>}
         {props.cards.map((step, index) =>
           <Card sx={{ minWidth: 275, margin: '32px', padding: '22px' }} key={index} className='card' >
             <CardContent className='cardContent'>
@@ -74,9 +75,10 @@ function SwipeableTextMobileStepper(props) {
             </CardActions> */}
           </Card>
         )}
+        {props.tab === 'main' &&
         <div className='rightArrow' onClick={handleClickRight}>
           <img src={RightArrow} className="middle" alt='left-arrow' />
-        </div>
+        </div>}
       </div>
     </Box>
   );

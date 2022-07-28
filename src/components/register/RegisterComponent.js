@@ -80,7 +80,7 @@ class RegisterComponent extends React.PureComponent {
             />
           </Grid>
           <Grid Item xs={4} className='mb-40'>
-            <DropdownList label='class' value={this.state.classType} itemsList={this.state.itemsList} handleChange={this.handleChange} />
+            <DropdownList label='class' className='ddlClass' value={this.state.classType} itemsList={this.state.itemsList} handleChange={this.handleChange} />
           </Grid>
           <Grid Item xs={9} className='btnGrid'>
             <Button className='btnSignUp' onClick={() => {this.props.navigate('/home')}} variant="contained">REGISTER</Button>
