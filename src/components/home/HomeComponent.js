@@ -22,10 +22,10 @@ class HomeComponent extends React.PureComponent {
   render() {
     return (
       <div className='container'>
-        <Box sx={{ width: '100%' }} className='username'>
+        <Box className='username'>
           <Typography variant="h3" className='txtUserName' component="div" gutterBottom>Hello Jhon</Typography>
         </Box>
-        <TabPanel />
+        <TabPanel {...this.props} />
       </div>
     )
   }

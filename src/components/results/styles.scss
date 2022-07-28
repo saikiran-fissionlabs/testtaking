@@ -1,0 +1,47 @@
+.result {
+  background: #2299924A;
+  // background: #229992;
+  height: 750px;
+  ;
+}
+.name-text {
+  padding-left: 70px !important;
+}
+.goToHome {
+  background: #162E64 !important;
+}
+.backArrowImage {
+  width: 25px;
+  height: 15px;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.marksImage {
+  width: 140px !important;
+  height: 150px !important;
+  padding-bottom: 20px;
+}
+.subInstructionText {
+  padding-bottom: 50px !important;
+  color: #0107A5;
+  font-weight: 600;
+}
+.instructionsHeading {
+  color: #16642C;
+  font-weight: 600;
+  margin-top: 20px !important;
+  margin-bottom: 15px !important;
+}
+.correct {
+  color: #16642C;
+}
+.wrong {
+  color: #C11313;
+}
+.missed {
+  color: #073FBE;
+}
+.spTime {
+  color: #6F0606;
+}

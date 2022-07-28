@@ -132,7 +132,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
+export default function BasicTabs(props) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -143,15 +143,15 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" className='tabs'>
-          <Tab label="All Tests" {...a11yProps(0)} className={value === 0 ?'activeTab' : 'tab'} />
-          <Tab label="JEE Mains" {...a11yProps(1)} className={value === 1 ?'activeTab' : 'tab'} />
-          <Tab label="Eamcet" {...a11yProps(2)} className={value === 2 ?'activeTab' : 'tab'} />
+          <Tab label="All Tests" {...a11yProps(0)} className={value === 0 ? 'activeTab' : 'tab'} />
+          <Tab label="JEE Mains" {...a11yProps(1)} className={value === 1 ? 'activeTab' : 'tab'} />
+          <Tab label="Eamcet" {...a11yProps(2)} className={value === 2 ? 'activeTab' : 'tab'} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0} className='tabPanel'>
-        <strong>JEE Mains</strong><br/>
-        <Carousel cards={cards} />
-        <strong>EAMCET</strong>
+        <strong className='tabSubTitle'>JEE Mains</strong>
+        <Carousel cards={cards} {...props}/>
+        <strong className='tabSubTitle'>EAMCET</strong>
         <Carousel cards={cardOne} />
       </TabPanel>
       <TabPanel value={value} index={1} className='tabPanel'>

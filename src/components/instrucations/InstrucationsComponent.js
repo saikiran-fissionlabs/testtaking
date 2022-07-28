@@ -13,24 +13,23 @@ class InstrucationsComponent extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      classType: '',
-      itemsList: ['class', 'class0', 'class1', 'class2']
+      checked: true
     }
   }
 
-  handleChange = (event) => {
-    this.setState({ classType: event.target.value });
+  handleChange = () => {
+    this.setState({ checked: !this.state.checked });
   };
 
   render() {
     return (
-      <div className='main'>
+      <Grid className='main'>
         <Grid container className=''>
           <Grid Item xs={1}>
-            <img src={Arrow} className="" alt='logo' />
+            <a href=''><img src={Arrow} onClick={() => { this.props.navigate('/home') }} className="backArrow" alt='logo' /></a>
           </Grid>
           <Grid Item xs={3} className=''>
-            <Typography variant="h1" className='txtTest' component="div" gutterBottom>Test -1</Typography>
+            <Typography variant="h3" className='' component="div" gutterBottom>Test -1</Typography>
             <Box sx={{ width: '100%' }}>
               <Typography className='txtTestIns' component="div" gutterBottom>Test Type: JEE Mains</Typography>
               <Typography className='txtTestIns' component="div" gutterBottom>Marks: 150 M</Typography>
@@ -61,15 +60,15 @@ class InstrucationsComponent extends React.PureComponent {
         </Grid>
         <hr className='hr'  />
         <Grid container className='pl'>
-          <Checkbox className='checkbox' />
+          <Checkbox className='checkbox' onChange={this.handleChange} />
         <Grid Item xs={7} className=''>
           <Typography variant="h6" className='txtTC' component="div" gutterBottom>I accept to the terms and conditions</Typography>
           </Grid>
         <Grid Item xs={4} className='txtRigth'>
-          <Button className='btnStart' onClick={() => { this.props.navigate('/test') }} variant="contained">Start Test</Button>
+          <Button className='btnStart' disabled={this.state.checked} onClick={() => { this.props.navigate('/test') }} variant="contained">Start Test</Button>
         </Grid>
         </Grid>
-      </div>
+      </Grid>
     )
   }
 }

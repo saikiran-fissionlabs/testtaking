@@ -1,5 +1,4 @@
 import React from 'react';
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -21,7 +20,6 @@ class TestTakeComponent extends React.PureComponent {
   }
 
   handleClick = () => {
-    console.log(Questions.qus.length, '---', '--', this.state.qusIndex);
     if (Questions.qus.length - 1 > this.state.qusIndex) {
       this.setState({ btnPrev: false, qusIndex: this.state.qusIndex + 1 });
     } else {
@@ -50,7 +48,7 @@ class TestTakeComponent extends React.PureComponent {
                 <Typography variant="h1" component="div" gutterBottom>Test -1</Typography>
               </Grid>
               <Grid Item xs={6} className='btnLeft'>
-                <Button className='btnSubmit' onClick={() => { this.props.navigate('/submit') }} variant="contained">SUBMIT</Button>
+                <Button className='btnSubmit' onClick={() => { this.props.navigate('/results') }} variant="contained">SUBMIT</Button>
               </Grid>
             </Grid>
             <Grid container className='mt10'>

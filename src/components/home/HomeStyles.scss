@@ -31,7 +31,11 @@
   border-top-right-radius: 10px !important;
   background: #162E64 !important;
 }
+.MuiBox-root.css-19kzrtu {
+  padding: 0px;
+}
 .tabPanel {
+  padding: 0px !important;
   color: #fff;
   background: #162E64;
 }
@@ -58,4 +62,29 @@
 }
 .tabCarousel {
   width: 80%;
+}
+.tabSubTitle {
+  margin-left: 44px;
+}
+.leftArrow {
+  background: #7B87A3;
+  width: 3%;
+  vertical-align: middle;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.middle {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.rightArrow {
+  background: #7B87A3;
+  width: 3%;
+  vertical-align: middle;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }

@@ -8,6 +8,7 @@ import Register from './containers/Register';
 import Home from './containers/Home';
 import Instrucations from './containers/Instrucations';
 import TestTake from './containers/TestTake';
+import Results from './containers/Results';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/home' element={<Home/>} />
         <Route path='/instrucations' element={<Instrucations/>} />
         <Route path='/test' element={<TestTake/>} />
+        <Route path='/results' element={<Results/>} />
       </Routes>
     </Router>
   );

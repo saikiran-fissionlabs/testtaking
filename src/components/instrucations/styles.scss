@@ -1,7 +1,12 @@
 
 .main {
-  background: #229992;
+  background: #2299924A;
   padding: 50px !important;
+}
+.backArrow {
+  width: 40px;
+  height: 30px;
+  margin-right: -40px !important;
 }
 .hr {
   color: #0107A5 !important;
@@ -49,10 +54,6 @@
   font-size: 16px;
   line-height: 30px !important;
   color: black;
-}
-.txtTest {
-  font-size: 32px;
-  font-weight: 700;
 }
 .pl {
   padding-left: 94px;
