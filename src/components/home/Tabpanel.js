@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 import './HomeStyles.scss';
+import DemoCarousel from './slider';
 import Carousel from './Carousel';
 import testNow from '../../assets/images/testNow.png';
 import time from '../../assets/images/time.png';
@@ -150,7 +151,7 @@ export default function BasicTabs(props) {
       </Box>
       <TabPanel value={value} index={0} className='tabPanel'>
         <strong className='tabSubTitle'>JEE Mains</strong>
-        <Carousel cards={cards} {...props} tab='main'/>
+        <DemoCarousel cards={cards} {...props}/>
         <strong className='tabSubTitle'>EAMCET</strong>
         <Carousel cards={cardOne} />
       </TabPanel>

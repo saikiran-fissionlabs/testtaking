@@ -39,15 +39,70 @@
   color: #fff;
   background: #162E64;
 }
+// ---- Carousel ----
+.Carousel {
+  width: 100;
+}
+.testName {
+  text-align: left;
+  color: #000 !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+}
+.MuiCardContent-root.cardContent.css-46bh2p-MuiCardContent-root {
+  padding-top: 0px;
+}
+button.control-arrow.control-next {
+  background: #FBEDED !important;
+  border-bottom-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+}
+button.control-arrow.control-next:hover {
+  background: #000 !important;
+}
+
+button.control-arrow.control-prev {
+  background: #FBEDED !important;
+  border-bottom-right-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+button.control-arrow.control-prev:hover {
+  background: #000 !important;
+}
+
+.imgIcons {
+  height: 40px;
+  width: 40px !important;
+}
+.testNowImg {
+  position: relative;
+  height: 100px;
+  width: 100px !important;
+}
+.imgTestNow {
+  // padding-bottom: 100px !important;
+}
 .cards {
   margin-left: 2px !important;
-  display: inline-flex;
+  // display: inline-flex;
 }
 .card {
   display: inline-flex;
   height: 200px;
   width: 400px;
   border-radius: 20px !important;
+}
+.css-13ku0wv-MuiPaper-root-MuiCard-root {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1pxrgba(0,0,0,0.2),0px 1px 1px 0pxrgba(0,0,0,0.14),0px 1px 3px 0pxrgba(0,0,0,0.12);
+  overflow: hidden;
+  min-width: 275px;
+  margin: 30px;
+  padding: 7px;
 }
 .cardContent {
   // display: inline-flex;

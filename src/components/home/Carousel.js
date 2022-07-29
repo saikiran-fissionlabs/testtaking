@@ -3,12 +3,9 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
-// import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
 
-import LeftArrow from '../../assets/images/leftArrow.png';
-import RightArrow from '../../assets/images/rightArrow.png';
 
 function SwipeableTextMobileStepper(props) {
   const theme = useTheme();
@@ -20,10 +17,6 @@ function SwipeableTextMobileStepper(props) {
   const handleClick = () => {
     props.navigate('/instrucations');
   }
-  const handleClickLeft = () => {
-  }
-  const handleClickRight = () => {
-  }
 
   return (
     <Box sx={{ maxWidth: 400, flexGrow: 2 }}>
@@ -34,10 +27,7 @@ function SwipeableTextMobileStepper(props) {
         enableMouseEvents
         className='cards'
       >
-        {props.tab === 'main' &&
-        <div className='leftArrow' onClick={handleClickLeft}>
-          <img src={LeftArrow} className="middle" alt='left-arrow' />
-        </div>}
+        
         {props.cards.map((step, index) =>
           <Card sx={{ minWidth: 275, margin: '32px', padding: '22px' }} key={index} className='card' >
             <CardContent className='cardContent'>
@@ -63,22 +53,13 @@ function SwipeableTextMobileStepper(props) {
                     {step.qus}
                   </Typography>
                 </Grid>
-                <Grid Item xs={3}>
+                <Grid Item xs={2}>
                   <img onClick={handleClick}src={step.imgPath} className="App-logo" alt='logo' />
                 </Grid>
               </Grid>
             </CardContent>
-            {/* <CardActions>
-              <Box sx={{ width: '100%' }}>
-                <img src={testNow} className="App-logo" alt='logo' />
-              </Box>
-            </CardActions> */}
           </Card>
         )}
-        {props.tab === 'main' &&
-        <div className='rightArrow' onClick={handleClickRight}>
-          <img src={RightArrow} className="middle" alt='left-arrow' />
-        </div>}
       </div>
     </Box>
   );
