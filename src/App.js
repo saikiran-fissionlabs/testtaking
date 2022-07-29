@@ -10,8 +10,6 @@ import Instrucations from './containers/Instrucations';
 import TestTake from './containers/TestTake';
 import Results from './containers/Results';
 
-const url = 'main--elaborate-tiramisu-d51710.netlify.app';
-
 function App() {
   return (
     // <div className="App">
@@ -21,12 +19,12 @@ function App() {
     // </div>
     <Router>
       <Routes>
-        <Route path={ '/'} element={<Login/>} />
-        <Route path={url + '/register'} element={<Register/>} />
-        <Route path={url + '/home'} element={<Home/>} />
-        <Route path={url + '/instrucations'} element={<Instrucations/>} />
-        <Route path={url + '/test'} element={<TestTake/>} />
-        <Route path={url + '/results'} element={<Results/>} />
+        <Route path='/' element={<Login/>} />
+        <Route path='/register' element={<Register/>} />
+        <Route path='/home' element={<Home/>} />
+        <Route path='/instrucations' element={<Instrucations/>} />
+        <Route path='/test' element={<TestTake/>} />
+        <Route path='/results' element={<Results/>} />
       </Routes>
     </Router>
   );
