@@ -139,7 +139,7 @@ export default function BasicTabs(props) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -151,16 +151,17 @@ export default function BasicTabs(props) {
       </Box>
       <TabPanel value={value} index={0} className='tabPanel'>
         <strong className='tabSubTitle'>JEE Mains</strong>
-        <DemoCarousel cards={cards} {...props}/>
+        <DemoCarousel cards={cards} {...props} />
         <strong className='tabSubTitle'>EAMCET</strong>
-        <Carousel cards={cardOne} />
+        <Carousel cards={cardOne} {...props} />
       </TabPanel>
       <TabPanel value={value} index={1} className='tabPanel'>
         <strong>JEE Mains</strong>
-        <Carousel cards={jeeMains} className='tabCarousel' />
+        <Carousel cards={jeeMains} className='tabCarousel' {...props} />
       </TabPanel>
       <TabPanel value={value} index={2} className='tabPanel'>
         <strong>EAMCET</strong>
+        <Carousel cards={cardOne} {...props} />
       </TabPanel>
     </Box>
   );

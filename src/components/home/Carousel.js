@@ -54,7 +54,7 @@ function SwipeableTextMobileStepper(props) {
                   </Typography>
                 </Grid>
                 <Grid Item xs={2}>
-                  <img onClick={handleClick}src={step.imgPath} className="App-logo" alt='logo' />
+                  <img onClick={handleClick}src={step.imgPath} className="testNowImg" alt='logo' />
                 </Grid>
               </Grid>
             </CardContent>
